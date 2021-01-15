@@ -12,4 +12,4 @@ import 'firebase/firestore';
     appId: "1:469259484097:web:a980ffdf890dd11af04d40"
   };
   // Initialize Firebase
-  export cost db=firebase.initializeApp(firebaseConfig).firestore();
+  export const db=firebase.initializeApp(firebaseConfig).firestore();

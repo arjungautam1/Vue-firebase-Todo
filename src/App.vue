@@ -8,15 +8,21 @@
       <v-spacer></v-spacer>
     </v-app-bar>
 
-    <v-main> </v-main>
+   <v-content>
+     <ToDoList />
+     </v-content>
+     
   </v-app>
 </template>
 
 <script>
+import ToDoList from "./components/ToDoList.vue"
 export default {
   name: "App",
 
-  components: {},
+  components: {
+    ToDoList
+  },
 
   data: () => ({
     //
