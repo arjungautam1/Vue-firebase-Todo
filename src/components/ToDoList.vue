@@ -55,12 +55,14 @@ export default {
         this.newItem = "";
       }
     },
-    deleteToDo(id){
-        db.collection("ToDos").doc(id).delete();
-    }
+    deleteToDo(id) {
+      db.collection("ToDos")
+        .doc(id)
+        .delete();
+    },
   },
-  firestore:{
-      ToDos:db.collection("ToDos")
-  }
+  firestore: {
+    ToDos: db.collection("ToDos"),
+  },
 };
 </script>
